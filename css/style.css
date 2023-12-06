@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(./../address/img/fondo.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: ;
+}
+/* HEADER*/
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+}
+
+header nav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+header nav ul li ul li {
+    display: block;
+}
+
+header nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    color: black;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-opciones {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+/* MAIN */
+main{
+    margin-top: 40px;
+}
+.registrarse{
+    margin-top: 60px;
+}
+main section .contenedor-autos{
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+main section .contenedor-autos .autos{
+    width: 350px;
+    background-color: grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+main section .contenedor-autos .autos img{
+    width: 100%;
+    height: 250px;
+}
+main section .contenedor-autos .autos .texto-autos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section .menu-main .card img{
+    /* width: 750px; */
+    background-position: center;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Media query para hacer el pie de página responsivo */
+@media only screen and (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
